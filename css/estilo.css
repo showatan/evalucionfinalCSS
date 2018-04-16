@@ -1,0 +1,179 @@
+body{
+    background: black;
+    font-family: 'Dancing Script', cursive;
+    width: 900px;
+    margin: 0 auto;
+
+}
+/**  Contenedor general**/
+#contenedorg{
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+/**  fin contenedor general**/
+/** parte de estilo del encabezado**/
+header{
+    margin: 0 auto;
+    height: 15%;
+    width: 100%;
+    background:  #5b7989;
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#titulop h1{
+    color: white;
+    text-shadow:#02010a 2px 2px;
+}
+#titulop{
+    width: 50%;
+    margin: 0.5% 4%;
+}
+.menu{
+   width: 45%;
+   padding: 2%;
+   margin: 0 auto;
+   
+}
+nav li{
+    list-style: none;
+    display: inline;
+    font-size: 1.4em;
+}
+li a{
+    color: white;
+    padding-right: 1em;
+}
+.mostrando{
+    text-decoration: none;
+}
+/** Finaliza parte del encabezado**/
+
+/* Parte de la imagen principal*/
+#principalimg{
+    width: 100%;
+    background: #82c3a6;
+    margin: 0 auto;
+    text-align: center;
+
+}
+#principalimg img{
+    width: 70%;
+    margin: 5%;
+    padding: 0;
+    box-shadow: black 2px 2px;
+   
+}
+/*   fin imagen principal*/
+/*   imagenes secundarias*/
+.secundarioimg{
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    background: #d5c75f;
+    width: 100%;
+}
+.secundarioimg div{
+    width: 50%;
+    text-align: center;
+    color: black;
+    margin-bottom: 2%;
+}
+a[href$=".html"]>img{
+    width: 80%;
+    margin: 3%;
+    margin-bottom: 0;
+    box-shadow: black 2px 2px;
+}
+div>a[href$=".html"]{
+    text-align: center;
+    margin-bottom: 8%;
+    font-size: 1.5em;
+    color: black;
+    
+}
+/*    fin imagenes secundarias*/
+/*  pie de pagina*/
+footer{
+    background: #C6d5c5;
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+footer>div{
+    width: 25%;
+    padding: 2%;
+    box-sizing: border-box;
+    text-align: left;
+    color: black;
+    transition: background 1s;
+}
+p>a{
+    color: black;
+    text-decoration: none;
+}
+p a:hover{
+    background: ivory;
+}
+
+/* Finde pie de pagina*/
+
+
+
+
+/*********************************************************************/
+/** parte para mobiles**/
+@media (max-width: 900px){
+   
+    body{
+        width: 100%;
+
+    }
+    #contenedorg{
+        width: 98%;
+        margin: 1%;
+    }
+    /* Configuracion del encabezado*/
+    header{
+        flex-flow: row wrap;
+    }
+    #titulop{
+        width: 100%;
+        text-align: center;
+    }
+    .menu{
+        width: 100%;
+        text-align: center;
+        
+    }
+    /* acaba la configuracion del encabezado*/
+    /*   Imagenes Secundarias*/
+    .secundarioimg div{
+        width: 100%;
+    }
+
+    /*    Fin imagenes Secundarias*/
+    /* footer pie de pagina*/
+    footer>div{
+        width: 100%;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+
+    /* final pie de pagina*/
+}
+
+/** finaliza parte para mobiles**/
