@@ -1,0 +1,200 @@
+body{
+    background: black;
+    font-family: 'Dancing Script', cursive;
+    width: 900px;
+    margin: 0 auto;
+
+}
+/**  Contenedor general**/
+#contenedorg{
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    width: 100%;
+    animation: sliden 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 10ms;
+    
+}
+/*-------animaciongeneral-------*/
+@keyframes sliden{
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+/*------final animacion general----*/
+
+/**  fin contenedor general**/
+/** parte de estilo del encabezado**/
+header{
+    margin: 0 auto;
+    height: 15%;
+    width: 100%;
+    background:  #5b7989;
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#titulop h1{
+    color: white;
+    text-shadow:#02010a 2px 2px;
+}
+#titulop{
+    width: 50%;
+    margin: 0.5% 4%;
+}
+.menu{
+   width: 45%;
+   padding: 2%;
+   margin: 0 auto;
+   
+}
+nav li{
+    list-style: none;
+    display: inline;
+    font-size: 1.4em;
+}
+li a{
+    color: white;
+    padding-right: 1em;
+}
+.mostrando{
+    text-decoration: none;
+}
+/** Finaliza parte del encabezado**/
+
+/** Galeria de paisajes**/
+
+article{
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+    background:#d5c75f;
+}
+article div{
+    width: 33.33%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+}
+article div>img{
+    width: 100%;
+
+}
+
+/**  Fin de galeria paisajes**/
+/** efectos de imagenes**/
+.efblur{
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+.grises{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.efsepia{
+    filter: sepia(90%);
+    -webkit-filter: sepia(90%);
+}
+
+/** finde efectos de imagenes**/
+/*  pie de pagina*/
+footer{
+    background: #C6d5c5;
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+footer>div{
+    width: 25%;
+    padding: 2%;
+    box-sizing: border-box;
+    text-align: left;
+    color: black;
+    transition: background 1s;
+}
+p>a{
+    color: black;
+    text-decoration: none;
+}
+p a:hover{
+    background: ivory;
+}
+p>img{
+    width: 30px;
+    vertical-align: middle;
+}
+
+/* Finde pie de pagina*/
+
+
+/*********************************************************************/
+/** parte para mobiles**/
+@media (max-width: 900px){
+   
+    body{
+        width: 100%;
+
+    }
+    #contenedorg{
+        width: 98%;
+        margin: 1%;
+    }
+    /* Configuracion del encabezado*/
+    header{
+        flex-flow: row wrap;
+    }
+    #titulop{
+        width: 100%;
+        text-align: center;
+    }
+    .menu{
+        width: 100%;
+        text-align: center;
+        
+    }
+    /* acaba la configuracion del encabezado*/
+    /*  parte de imagenes de galeria*/
+    article div{
+        width: 100%;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+        box-sizing: border-box;
+    }
+
+    /*  Fin de la galeria*/
+
+    /* footer pie de pagina*/
+    footer>div{
+        width: 100%;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+
+    /* final pie de pagina*/
+}
+
+/** finaliza parte para mobiles**/
